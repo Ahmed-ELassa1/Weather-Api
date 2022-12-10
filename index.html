@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container p-5 mb-4">
+            <div class="ms-5">
+                <a href="#" class="navLogo">
+                    <img src="img/logo.png" alt="weather">
+                    <div class="float-start ms-3">
+                        <h3 class="text-capitalize mb-1">weather</h3>
+                        <h6>tagline goes here</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-links me-0 float-end me-5">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-capitalize text-info border border-info rounded-pill"
+                            aria-current="page" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">news</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">live camers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="weather w-100 ">
+            <div class=" weatherContainer">
+                <div class="container px-5 py-3">
+                    <form class="findLocation m-5">
+                        <input type="text" onkeyup="searchInput()" class="ps-3 rounded-pill findLocationInput w-100"
+                            placeholder="Find Your Location" id="searchInputData">
+                        <button type="button" class="rounded-pill btn btn-primary findLocationBtn" id="LocationBtn">Find</button>
+                    </form>
+                </div>
+                <div class="container px-5">
+                    <div class="weatherTable row mx-5">
+                        <div class="todayForecast col-4 p-0" id="todayContent">
+                            <!-- <div id="todayHeader" class="p-2">
+                                <span>monday</span>
+                                <span>17 october</span>
+                            </div>
+                            <div  class="p-3 column">
+
+                            </div> -->
+                        </div>
+                        <div class="nextDayForecast col-4 text-center p-0" id="nextDay">
+                        </div>
+                        <div class="twoDayForecast col-4 p-0  text-center " id="twoDays">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <div class="container p-5 text-center">
+            <form class="mx-5  float-start" id="emailSub">
+                <input type="text" class="ps-3 rounded-pill text-white" placeholder="Enter your email to subscribe"
+                    id="emailSubInput">
+                <button type="text" class="rounded-pill btn btn-primary " id="emailSubBtn">subscribe</button>
+            </form>
+            <div class="float-end mt-1 me-5 pe-5">
+                <a class="text-info px-2" href="https://www.facebook.com/" target="_blank">
+                    <i class="footerIcon fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="text-info px-2" href="https://www.twitter.com/" target="_blank">
+                    <i class="footerIcon fa-brands fa-twitter"></i>
+                </a>
+                <a class="text-info px-2" href="https://www.google.com/" target="_blank">
+                    <i class="footerIcon fa-brands fa-google-plus-g"></i>
+                </a>
+                <a class="text-info px-2" href="https://www.pinterest.com/" target="_blank">
+                    <i class="footerIcon fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+            <div class="clr"></div>
+            <p class="mx-5 copyRight mt-3 px-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- <script src=" js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
